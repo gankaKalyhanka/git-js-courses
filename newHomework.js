@@ -1,4 +1,4 @@
-let styles = ["Джаз", "Блюз"]
+const styles = ["Джаз", "Блюз"]
 console.log (styles)
 styles.push("Рок-н-ролл")
 console.log (styles)
@@ -10,18 +10,16 @@ console.log(styles)
 
     ["Мне", "уже", "пора", "в", "отпуск"].forEach(console.log)//перебрала массив с вызовом каждого эл-та
 
-let numbers = ['1', '2', '3']
-let arrow = (numbers.join(';'))
+const numbers = ['1', '2', '3']
+const arrow = (numbers.join(';'))
 console.log (arrow)
 console.log (typeof(arrow))
-let newArrow = arrow.split(',')
+const newArrow = arrow.split(',')
 console.log(newArrow)
 console.log (typeof(newArrow)) //преобразовала массив в строку и обратно
 
-    ['Вася', 'Петя', 'Андрюша'].forEach((item, i, arr) => {
-    console.log( `${item} hello!` )
-})//добавила hello к каждому элементу массива
+    ['Вася', 'Петя', 'Андрюша'].map(item=> `${item} hello!`)
+)//добавила hello к каждому элементу массива
 
-let array = ["Выходные", "скоро", "наступят"]
-let secondArray = (Boolean(array))
-console.log (typeof (secondArray)) //преобразовать массив в булен
+["Выходные", "скоро", "наступят"].map(item=> Boolean(item))
+ //преобразовать массив в булен
