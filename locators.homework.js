@@ -3,7 +3,7 @@ a = $x('//*[@id="orb-search-q"]') //то же самое через икспас
 
 console.log(document.querySelector("li.orb-nav-worklife").querySelector("a")) //нашла ссылку на один из разделов
 
-console.log(document.querySelector('[href="https://www.bbc.com/worklife"]')) //по-другому нашла
+console.log(document.querySelector('[href="https://www.bbc.com/worklife"]')) //по-другому нашла cсылку
 a = $x('//*[@id="orb-nav-links"]/ul/li[5]/a') //нашла ссылку через xpath
 
 console.log(document.querySelector("a.block-link__overlay-link")) //нашла картинку на главной сайта
