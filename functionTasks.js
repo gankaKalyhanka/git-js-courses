@@ -41,13 +41,14 @@ console.log(result)
 
 function name() {
     let currentUserName
-    if (currentUserName == 'Anna')     {
+    currentUsername = prompt('What is your name?')
+    if (currentUsername === 'Anna')     {
         return console.log('Hello, Anna')
 }    else {
         return console.log('Hello, my dear friend')
 }
 }
-    currentUsername = prompt('What is your name?')
+
 name()   //Если мое имя, здоровается со мной
 
 
@@ -58,23 +59,6 @@ console.log (typeOfElement(true))
 console.log (typeOfElement(2))
 console.log (typeOfElement('true')) //функция для вызова типа элемента
 
-
-[1, 2, 3, 4, 5, 6].forEach(item) => if ((item % 2) === 0)
-{
-    console.log(item)
-}
-
-let arr = [12, 42, 63, 56, 122, 17, 117, 25, 645, 722, 964]
-function findNumber() {
-    let arr
-    for (let i = 0; i < arr.length; i++)
-    {
-        if ((arr[i] % 2) === 0)
-        {
-            console.log(arr[i]);
-        }
-    }
-}
 
 [12, 42, 63, 56, 122, 17, 117, 25, 645, 722, 964].filter(item => item % 2 === 0)
 
